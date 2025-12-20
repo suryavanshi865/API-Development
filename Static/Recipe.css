@@ -1,0 +1,51 @@
+body { font-family: Arial; margin: 20px; }
+
+.truncate {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border-bottom: 1px solid #ccc; }
+
+.search-container input { padding: 6px; margin-right: 5px; }
+.search-container button { padding: 6px 10px; }
+
+.stars span {
+  font-size: 16px;
+  color: #ccc;
+}
+.stars .full { color: gold; }
+.stars .half {
+  background: linear-gradient(90deg, gold 50%, #ccc 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.drawer {
+  position: fixed;
+  top: 0; right: -420px;
+  width: 400px; height: 100%;
+  background: #fff;
+  padding: 20px;
+  transition: right .3s;
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+}
+
+.drawer.open { right: 0; }
+
+.hidden { display: none; }
+
+.nutrition td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+.fallback {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #777;
+}

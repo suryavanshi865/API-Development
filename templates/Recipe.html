@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Recipe.css') }}">
+</head>
+<body>
+
+<h2>Recipes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Cuisine</th>
+      <th>Rating</th>
+      <th>Total Time</th>
+      <th>Serves</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<div id="fallback" class="fallback hidden"></div>
+
+<div id="pagination"></div>
+
+<div id="drawer" class="drawer">
+  <button onclick="closeDrawer()">Close</button>
+  <div id="drawerContent"></div>
+</div>
+
+<script src="{{ url_for('static', filename='recipe.js') }}"></script>
+</body>
+</html>
